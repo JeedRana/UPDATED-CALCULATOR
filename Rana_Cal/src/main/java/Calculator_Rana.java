@@ -432,19 +432,35 @@ public class Calculator_Rana extends javax.swing.JFrame {
         secondnum = Double.parseDouble(lblDis.getText());
         if(operations == "+"){
             result = firstnum + secondnum;
-            answer = String.format("%.2f",result);
+            if(result 2%==0){
+                answer = String.format("%.2f",result);
+            }else{
+                answer = String.format(""+result);
+            }
             lblDis.setText(answer);
         }else if(operations == "-"){
             result = firstnum - secondnum;
-            answer = String.format("%.2f",result);
+            if(result 2%==0){
+                answer = String.format("%.2f",result);
+            }else{
+                answer = String.format(""+result);
+            }
             lblDis.setText(answer);
         }else if(operations == "/"){
             result = firstnum / secondnum;
-            answer = String.format("%.2f",result);
+            if(result 2%==0){
+                answer = String.format("%.2f",result);
+            }else{
+                answer = String.format(""+result);
+            }
             lblDis.setText(answer);
         }else if(operations == "*"){
             result = firstnum * secondnum;
-            answer = String.format("%.2f",result);
+           if(result 2%==0){
+                answer = String.format("%.2f",result);
+            }else{
+                answer = String.format(""+result);
+            }
             lblDis.setText(answer);
         }
     }//GEN-LAST:event_btnEqualActionPerformed
